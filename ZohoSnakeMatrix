@@ -1,0 +1,24 @@
+public class ZohoSnakeMatrix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int input = 4;
+		int n = input+input-1;
+		int a = 1;
+		for(int i=0;i<input;i++) {
+			int j=0;
+			for(;j<input-i-1;j++) {
+				System.out.print("  ");
+			}
+			for(;j<n-i;j++) {
+				System.out.print(a+" ");
+				a++;
+			}
+			for(;j<n;j++) {
+				System.out.print("  ");
+			}
+			System.out.println();
+		}
+	}
+
+}
